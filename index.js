@@ -7,7 +7,7 @@ let getMovie = async () => {
     let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
     if (movieName.length <= 0) {
-        result.innerHTML = `<h3 class="msg">Please enter a movie name</h3>`;
+        result.innerHTML = `<h3 class="msg">Please enter a movie or TV Series name</h3>`;
     } else {
         try {
             let response = await fetch(url);
